@@ -1,0 +1,197 @@
+
+		body {
+			background-color: #ffd400;
+			color: black;
+			font-family: "nimbus-sans";
+		}
+
+		.container {
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.navbar a, .contactbar a {
+			margin-left: 20px;
+			margin-right: 20px;
+			text-decoration: underline;
+			color: black;
+			font-size: 18px;
+		}
+
+		.contactbar a {
+			display: block;
+		}
+
+		.contactbar a.small {
+			font-size: 12px;
+			margin-top: 20px;
+		}
+
+		.contactbar a.subtitle {
+			text-decoration: none;
+			font-size: 12px;
+		}
+
+		.contactbar {
+			position: fixed;
+			right: 20px;
+			top: 20px;
+			text-align: right;
+		}
+
+		.pin-text {
+			width: 100%;
+			padding: 10px;
+			background-color: #fff;
+			margin-bottom: 13%;
+		}
+
+		.pin-image img {
+			width: 100%;
+		}
+
+		.page-title {
+			text-align: center;
+			font-size: 30px;
+			display: block;
+			margin-top: 97px;
+			margin-bottom: 15px;
+		}
+
+		.page-logo {
+			margin-top: 80px;
+			text-align: center;
+			z-index:1000;
+		}
+
+		.page-logo img {
+			max-width: 400px;
+		}
+
+		.logo-mobile {
+			display: none;
+		}
+
+		.intro {
+			text-align: left;
+			width: 100%;
+			margin-bottom: 28px;
+		}
+
+		.col-md-3 {
+			padding-left: 1.5%;
+			padding-right: 1.5%;
+		}
+
+		.video-title-container, .dish-title-container {
+			text-align: right;
+			padding-right: 0;
+		}
+
+		.video-title, .dish-title {
+			font-size: 40px;
+			line-height: 0.95em;
+		}
+
+		.video-subtitle, .dish-subtitle {
+			margin-top: 5px;
+			font-size: 20px;
+		}
+
+		.pin-title {
+			font-size: 25px;
+		}
+
+		.pin-description {
+			margin-top: 9px;
+			line-height: 1.3em;
+		}
+
+		.pin-text {
+			position: relative;
+		}
+
+		.pin-location {
+			float: right;
+		}
+
+		.pin-head {
+			margin-bottom: -5px;
+			margin-top: -5px;
+		}
+
+		.pin-author {
+		 	float: left;
+		}
+
+		.video {
+			margin-top: 200px;
+			margin-bottom: 100px;
+		}
+
+		.dish {
+			margin-top: 200px;
+		}
+
+		.dish-qa {
+			margin-top: 1%;
+			margin-bottom: 40px;
+		}
+
+		.portrait-container {
+			padding-left: 0;
+		}
+
+		.portrait-container img {
+			width: 45%;
+			margin-bottom: 10px;
+		}
+
+		.portrait-age {
+			margin-top: 10px;
+		}
+
+		.events {
+		}
+
+
+		@media all and (min-width: 1360px) {
+		}
+
+		.container-fluid {
+			width: 90%;
+			max-width: 1300px;
+		}
+
+		@media all and (max-width: 1000px) {
+			body {
+				font-size: 28px;
+			}
+
+			.logo-desktop {
+				display: none;
+			}
+
+			.logo-mobile {
+				display: block;
+			}
+
+			.navbar {
+				font-size: 40px;
+			}
+
+			.contactbar {
+				display: none;
+			}
+
+			.top-row {
+				margin-top: 130px;
+			}
+
+			.page-subject {
+				margin-top: 60px;
+				font-size: 60px;
+			}
+
+
+		}
