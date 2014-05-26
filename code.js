@@ -15,11 +15,6 @@ function resizeVideo () {
 	var video = $('.video');
 	video.width('100%');
 	video.height(video.width() * 9 / 16);
-
-	var video = $('.event-video');
-	video.width('100%');
-	console.log(video.width());
-	video.height(video.width() * 9 / 16);
 }
 
 var i = 0;
