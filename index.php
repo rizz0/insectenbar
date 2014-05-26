@@ -10,6 +10,7 @@ die('page not found. <script>window.location = "/";</script>');
 
 ob_start();
 require($view);
+$pageTitle = isset($h1) ? $h1 . ' - De Insectenbar' : 'De Insectenbar';
 $content = ob_get_contents();
 ob_end_clean();
 require('views/index.html');
