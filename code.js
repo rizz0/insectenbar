@@ -12,7 +12,11 @@ $( document ).ready(function() {
 });
 
 function resizeVideo () {
-	var video = $('.video');
+	var video = $('.video iframe');
+	video.width('100%');
+	video.height(video.width() * 9 / 16);
+
+	var video = $('.event-video iframe');
 	video.width('100%');
 	video.height(video.width() * 9 / 16);
 }

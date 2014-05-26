@@ -151,7 +151,8 @@
 			margin-top: 10px;
 		}
 
-		.events {
+		.event-video {
+			margin-top: 80px;
 		}
 
 
@@ -170,6 +171,7 @@
 
 			.logo-desktop {
 				display: none;
+				z-index: 2000;
 			}
 
 			.logo-mobile {
