@@ -1,5 +1,7 @@
 <?php
 
+include('content.php');
+
 if($_SERVER['REQUEST_URI'] == '/') $view = 'views/missie.html';
 else $view = 'views/' . substr($_SERVER['REQUEST_URI'], 1) . '.html';
 
@@ -13,5 +15,5 @@ require($view);
 $pageTitle = isset($h1) ? $h1 . ' - De Insectenbar' : 'De Insectenbar';
 $content = ob_get_contents();
 ob_end_clean();
-require('views/index.html');
+require('views/layout.html');
 ?>

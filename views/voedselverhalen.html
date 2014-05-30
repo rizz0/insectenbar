@@ -1,5 +1,5 @@
 		<?php
-		$h1 = 'Voedselverhalen';
+		$h1 = $content['voedselverhalen']['title'];
 		include('views/components/logo.html');
 		?>
 
@@ -7,39 +7,58 @@
 		<div class="row">
 			<div class="col-md-3">
 
-			<?php include('views/components/pin.html'); ?>
-			<?php include('views/components/pin.html'); ?>
-			<?php include('views/components/pin.html'); ?>
+				<?php
+				if(is_array($content['voedselverhalen']['col1'])){
+					foreach($content['voedselverhalen']['col1'] AS $pin){
+						include('views/components/pin.html');
+						unset($pin);
+					}
+				}
+				?>
 
 			</div>
 			<div class="col-md-3">
 
 				<div class="intro">
-					Satis est tibi in te, satis in legibus, satis in mediocribus amicitiis praesidii. Tu quidem reddes; Quod ea non occurrentia fingunt, vincunt Aristonem; Tum Quintus: Est plane, Piso, ut dicis, inquit. Sed vos squalidius, illorum vides quam niteat oratio. Quae est igitur causa istarum angustiarum? Dici enim nihil potest verius. Nam, ut paulo ante docui, augendae voluptatis finis est doloris omnis amotio.
+					<?php echo $content['voedselverhalen']['intro-col2']; ?>
 				</div>
 
-
-
-			<?php include('views/components/pin.html'); ?>
-			<?php include('views/components/pin.html'); ?>
-			<?php include('views/components/pin.html'); ?>
+				<?php
+				if(is_array($content['voedselverhalen']['col2'])){
+					foreach($content['voedselverhalen']['col2'] AS $pin){
+						include('views/components/pin.html');
+						unset($pin);
+					}
+				}
+				?>
 
 			</div>
 			<div class="col-md-3">
 
 				<div class="intro">
-					Satis est tibi in te, satis in legibus, satis in mediocribus amicitiis praesidii. Tu quidem reddes; Quod ea non occurrentia fingunt, vincunt Aristonem; Tum Quintus: Est plane, Piso, ut dicis, inquit. Sed vos squalidius, illorum vides quam niteat oratio. Quae est igitur causa istarum angustiarum? Dici enim nihil potest verius. Nam, ut paulo ante docui, augendae voluptatis finis est doloris omnis amotio.
+					<?php echo $content['voedselverhalen']['intro-col3']; ?>
 				</div>
-			
-			<?php include('views/components/pin.html'); ?>
-			<?php include('views/components/pin.html'); ?>
-			<?php include('views/components/pin.html'); ?>
+
+				<?php
+				if(is_array($content['voedselverhalen']['col3'])){
+					foreach($content['voedselverhalen']['col3'] AS $pin){
+						include('views/components/pin.html');
+						unset($pin);
+					}
+				}
+				?>
 
 			</div>
 			<div class="col-md-3">
-			
-			<?php include('views/components/pin.html'); ?>
-			<?php include('views/components/pin.html'); ?>
-			<?php include('views/components/pin.html'); ?>
-		</div>
+				
+				<?php
+				if(is_array($content['voedselverhalen']['col4'])){
+					foreach($content['voedselverhalen']['col4'] AS $pin){
+						include('views/components/pin.html');
+						unset($pin);
+					}
+				}
+				?>
+
+			</div>
 		</div>
