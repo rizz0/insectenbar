@@ -1,0 +1,63 @@
+		<div class="row">
+			<div class="col-md-3">
+
+				<?php
+				if(is_array($content[$section]['col1'])){
+					foreach($content[$section]['col1'] AS $pin){
+						include('views/components/pin.html');
+						unset($pin);
+					}
+				}
+				?>
+
+			</div>
+			<div class="col-md-3">
+
+			<?php if($intro == true) { ?>
+				<div class="intro">
+					<?php echo $content[$section]['intro-col2']; ?>
+				</div>
+
+				<?php } ?>
+
+				<?php
+				if(is_array($content[$section]['col2'])){
+					foreach($content[$section]['col2'] AS $pin){
+						include('views/components/pin.html');
+						unset($pin);
+					}
+				}
+				?>
+
+			</div>
+			<div class="col-md-3">
+			<?php if($intro == true) { ?>
+				<div class="intro">
+					<?php echo $content[$section]['intro-col3']; ?>
+				</div>
+
+				<?php } ?>
+
+				<?php
+				if(is_array($content[$section]['col3'])){
+					foreach($content[$section]['col3'] AS $pin){
+						include('views/components/pin.html');
+						unset($pin);
+					}
+				}
+				?>
+
+			</div>
+			<div class="col-md-3">
+				
+				<?php
+				if(is_array($content[$section]['col4'])){
+					foreach($content[$section]['col4'] AS $pin){
+						include('views/components/pin.html');
+						unset($pin);
+					}
+				}
+				?>
+
+			</div>
+		</div>

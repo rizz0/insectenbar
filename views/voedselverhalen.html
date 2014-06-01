@@ -4,61 +4,10 @@
 		?>
 
 
-		<div class="row">
-			<div class="col-md-3">
+		<?php
+		$section = 'voedselverhalen';
+		$intro = true;
+		include 'views/components/pins.html'
+		?>
 
-				<?php
-				if(is_array($content['voedselverhalen']['col1'])){
-					foreach($content['voedselverhalen']['col1'] AS $pin){
-						include('views/components/pin.html');
-						unset($pin);
-					}
-				}
-				?>
 
-			</div>
-			<div class="col-md-3">
-
-				<div class="intro">
-					<?php echo $content['voedselverhalen']['intro-col2']; ?>
-				</div>
-
-				<?php
-				if(is_array($content['voedselverhalen']['col2'])){
-					foreach($content['voedselverhalen']['col2'] AS $pin){
-						include('views/components/pin.html');
-						unset($pin);
-					}
-				}
-				?>
-
-			</div>
-			<div class="col-md-3">
-
-				<div class="intro">
-					<?php echo $content['voedselverhalen']['intro-col3']; ?>
-				</div>
-
-				<?php
-				if(is_array($content['voedselverhalen']['col3'])){
-					foreach($content['voedselverhalen']['col3'] AS $pin){
-						include('views/components/pin.html');
-						unset($pin);
-					}
-				}
-				?>
-
-			</div>
-			<div class="col-md-3">
-				
-				<?php
-				if(is_array($content['voedselverhalen']['col4'])){
-					foreach($content['voedselverhalen']['col4'] AS $pin){
-						include('views/components/pin.html');
-						unset($pin);
-					}
-				}
-				?>
-
-			</div>
-		</div>

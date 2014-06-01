@@ -5,6 +5,10 @@
 			font-family: "nimbus-sans";
 		}
 
+		a, a:hover {
+			color: black;
+		}
+
 		.container {
 			text-align: center;
 			margin-top: 20px;

@@ -4,26 +4,26 @@
 				<div class="dish-subtitle"><?php echo $page['location']; ?></div>
 			</div>
 			<div class="col-md-6">
-			<img src="/images/<?php echo $page['content-image']; ?>" width="100%" />
+				<img src="/images/<?php echo $page['content-image']; ?>" width="100%" />
 			</div>
 			<div class="col-md-3 portrait-container">
 				<div class="portrait">
-				<img src="/images/<?php echo $page['author-image']; ?>" />
+					<img src="/images/<?php echo $page['author-image']; ?>" />
 				</div>
 
 				<div class="portrait-name">
-				NAME<br/>
-				<?php echo $page['name']; ?>
+					NAME<br/>
+					<?php echo $page['name']; ?>
 				</div>
 
 				<div class="portrait-age">
-				AGE<br/>
-				<?php echo $page['age']; ?>
+					AGE<br/>
+					<?php echo $page['age']; ?>
 				</div>
 
 				<div class="portrait-age">
-				LIKES<br/>
-				<?php echo $page['likes']; ?>
+					LIKES<br/>
+					<?php echo $page['likes']; ?>
 				</div>
 			</div>
 		</div>
@@ -33,25 +33,29 @@
 			</div>
 
 			<div class="col-md-3">
-				<strong>Q:</strong> <i>What do you consider food?</i><br/>
-				<strong>A:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Equidem etiam Epicurum, in physicis quidem, Democriteum puto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Equidem etiam Epicurum, in physicis quidem, Democriteum puto.<br/><br/>
-
-				<strong>Q:</strong> <i>Can you tell us about a local delicacy?</i><br/>
-				<strong>A:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Equidem etiam Epicurum, in physicis quidem, Democriteum puto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Equidem etiam Epicurum, in physicis quidem, Democriteum puto.<br/><br/>
-
+				<?php
+				foreach($page['questions']['col1'] AS $question){
+					echo '<strong>Q:</strong> <i>' . $question['question'] . '</i><br/>';
+					echo '<strong>A:</strong> ' . $question['answer'] . '<br/><br/>';
+				}
+				?>
 			</div>
 
 			<div class="col-md-3">
-				<strong>Q:</strong> <i>How is this dish being prepared?</i><br/>
-				<strong>A:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Equidem etiam Epicurum, in physicis quidem, Democriteum puto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Equidem etiam Epicurum, in physicis quidem, Democriteum puto.<br/><br/>
-
-				<strong>Q:</strong> <i>At what moment do you eat this dish?</i><br/>
-				<strong>A:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/><br/>
-
-				<strong>Q:</strong> <i>What is the most important value of the Mexican cuisine?</i><br/>
-				<strong>A:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/><br/>
+				<?php
+				foreach($page['questions']['col2'] AS $question){
+					echo '<strong>Q:</strong> <i>' . $question['question'] . '</i><br/>';
+					echo '<strong>A:</strong> ' . $question['answer'] . '<br/><br/>';
+				}
+				?>
 			</div>
 
 			<div class="col-md-3">
 			</div>
 		</div>
+
+		<?php
+		$intro = false;
+		$section = 'voedselverhalen';
+		include ('views/components/pins.html')
+		?>

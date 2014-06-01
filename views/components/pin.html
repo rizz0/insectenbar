@@ -1,5 +1,5 @@
 				<div class="pin-image">
-					<img src="images/<?php echo $pin['image'] ?>" />
+					<a href="/<?php echo $section ?>/<?php echo $pin['url'] ?>"><img src="images/<?php echo $pin['image'] ?>" /></a>
 				</div>
 				<div class="pin-text">
 
@@ -18,7 +18,7 @@
 					
 					<?php if(isset($pin['title']) && $pin['title']) { ?>
 					<div class="pin-title">
-						<?php echo $pin['title'] ?>
+						<a href="/<?php echo $section ?>/<?php echo $pin['url'] ?>"><?php echo $pin['title'] ?></a>
 					</div>
 					<?php } ?>
 					
