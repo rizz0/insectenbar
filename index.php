@@ -2,8 +2,25 @@
 
 include('content.php');
 
+$view = false;
 if($_SERVER['REQUEST_URI'] == '/') $view = 'views/missie.html';
-else $view = 'views/' . substr($_SERVER['REQUEST_URI'], 1) . '.html';
+
+$path = substr($_SERVER['REQUEST_URI'], 1);
+
+$parts = explode('/', $path);
+
+if(count($parts) > 1){
+	switch($parts[0]) {
+	case 'voedselverhalen':
+	if(isset($content['voedselverhalen']['pages'][$parts[1]])) {
+		$page = $content['voedselverhalen']['pages'][$parts[1]];
+		$view = 'views/voedselverhaal.html';
+		}
+	break;
+	}
+}
+
+if(!$view) $view = 'views/' . $path . '.html';
 
 if(!file_exists($view)){
 header("HTTP/1.0 404 Not Found");
