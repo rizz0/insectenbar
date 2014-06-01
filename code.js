@@ -9,7 +9,7 @@ $( document ).ready(function() {
 	});
 
 	$('.pin-container').on('click', function(){
-		window.location = $(this).closest('.js-pin-link').attr('href');
+		window.location = $(this).find('.js-pin-link').attr('href');
 	});
 
 	shame();
