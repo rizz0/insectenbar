@@ -1,5 +1,6 @@
+				<div class="pin-container">
 				<div class="pin-image">
-					<a href="/<?php echo $section ?>/<?php echo $pin['url'] ?>"><img src="images/<?php echo $pin['image'] ?>" /></a>
+					<img src="images/<?php echo $pin['image'] ?>" /></a>
 				</div>
 				<div class="pin-text">
 
@@ -18,11 +19,12 @@
 					
 					<?php if(isset($pin['title']) && $pin['title']) { ?>
 					<div class="pin-title">
-						<a href="/<?php echo $section ?>/<?php echo $pin['url'] ?>"><?php echo $pin['title'] ?></a>
+						<a class="js-pin-link" href="/<?php echo $section ?>/<?php echo $pin['url'] ?>"><?php echo $pin['title'] ?></a>
 					</div>
 					<?php } ?>
 					
 					<div class="pin-description">
 						<?php echo $pin['description'] ?>
 					</div>
+				</div>
 				</div>

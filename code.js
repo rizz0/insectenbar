@@ -8,6 +8,10 @@ $( document ).ready(function() {
 		resizeVideo();
 	});
 
+	$('.pin-container').on('click', function(){
+		window.location = $(this).closest('.js-pin-link').attr('href');
+	});
+
 	shame();
 });
 

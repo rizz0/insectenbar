@@ -159,6 +159,10 @@
 			margin-top: 80px;
 		}
 
+		.pin-container {
+			cursor: pointer;
+		}
+
 
 		@media all and (min-width: 1360px) {
 		}
