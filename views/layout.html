@@ -6,8 +6,21 @@
 	<link rel="stylesheet" href="/style.css">
 
 	<title><?php echo $pageTitle ?></title>
-	<script type="text/javascript" src="//use.typekit.net/ele5zyo.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<script type="text/javascript">
+		WebFontConfig = { fontdeck: { id: '43652' } };
+
+		(function() {
+			var wf = document.createElement('script');
+			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+			'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})();
+	</script>
+	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="/clamp.js"></script>
 	<script src="/code.js"></script>
