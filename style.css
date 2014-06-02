@@ -2,7 +2,10 @@
 		body {
 			background-color: #ffd400;
 			color: black;
-			font-family: "nimbus-sans";
+			font-family:"Apercu Medium", Calibri, sans-serif; 
+			font-size-adjust:0.508; 
+			font-weight:600; 
+			font-style:normal;
 		}
 
 		a, a:hover {
