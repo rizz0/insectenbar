@@ -17,11 +17,12 @@
 					</div>
 					<div style="clear: both;"></div>
 					
-					<?php if(isset($pin['title']) && $pin['title']) { ?>
-					<div class="pin-title">
-						<a class="js-pin-link" href="/<?php echo $section ?>/<?php echo $pin['url'] ?>"><?php echo $pin['title'] ?></a>
-					</div>
-					<?php } ?>
+					<?php if(isset($pin['title']) && $pin['title']) {
+					echo '<div class="pin-title">';
+					if($pin['url']) echo '<a class="js-pin-link" href="/'.$section .'/'.$pin['url'].'">'.$pin['title'].'</a>';
+					else echo $pin['title'];
+					echo '</div>';
+					} ?>
 					
 					<div class="pin-description">
 						<?php echo $pin['description'] ?>

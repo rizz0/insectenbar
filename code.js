@@ -8,8 +8,14 @@ $( document ).ready(function() {
 		resizeVideo();
 	});
 
-	$('.pin-container').on('click', function(){
-		window.location = $(this).find('.js-pin-link').attr('href');
+	$('.pin-container').each(function(){
+		var pinLink = $(this).find('.js-pin-link');
+		if(pinLink.length > 0) {
+			$(this).on('click', function(){
+				window.location = pinLink.attr('href');
+			});
+			$(this).css('cursor', 'pointer');
+		}
 	});
 
 });
