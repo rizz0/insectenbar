@@ -1,0 +1,43 @@
+
+
+		<div class="row dish">
+			<div class="col-md-3 dish-title-container">
+				<div class="dish-title"><?php echo $page['title']; ?></div>
+				<div class="dish-subtitle"><?php echo $page['subtitle']; ?></div>
+			</div>
+			<div class="col-md-6">
+				<?php
+				if($page['video']) echo $page['video'];
+				// elseif($page['content-image']) echo '<img src="/images/'.$page['content-image'].'" width="100%" />';
+				?>
+			</div>
+			<div class="col-md-3 portrait-container">
+			<!--
+				<div class="portrait">
+					<img src="/images/<?php echo $page['author-image']; ?>" />
+				</div>
+
+				<div class="portrait-name">
+					NAME<br/>
+					<?php echo $page['name']; ?>
+				</div>
+
+				<div class="portrait-age">
+					AGE<br/>
+					<?php echo $page['age']; ?>
+				</div>
+
+				<div class="portrait-age">
+					LIKES<br/>
+					<?php echo $page['likes']; ?>
+				</div> -->
+			</div>
+		</div>
+
+
+
+		<?php
+		$intro = false;
+		$section = 'kooksessies';
+		include ('views/components/pins.html')
+		?>

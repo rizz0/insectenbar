@@ -17,6 +17,13 @@ if(count($parts) > 1){
 		$view = 'views/voedselverhaal.html';
 		}
 	break;
+
+	case 'kooksessies':
+	if(isset($content['kooksessies']['pages'][$parts[1]])) {
+		$page = $content['kooksessies']['pages'][$parts[1]];
+		$view = 'views/kooksessie.html';
+		}
+	break;
 	}
 }
 

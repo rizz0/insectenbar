@@ -162,6 +162,10 @@
 			margin-top: 80px;
 		}
 
+		.dish {
+			margin-bottom: 100px;
+		}
+
 		@media all and (min-width: 1360px) {
 		}
 
