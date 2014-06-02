@@ -3,7 +3,11 @@
 include('content.php');
 
 $view = false;
-if($_SERVER['REQUEST_URI'] == '/') $view = 'views/missie.html';
+$bodyClass = null;
+if($_SERVER['REQUEST_URI'] == '/'){
+	$view = 'views/missie.html';
+	$bodyClass = 'bg';
+}
 
 $path = substr($_SERVER['REQUEST_URI'], 1);
 
