@@ -12,7 +12,6 @@ $( document ).ready(function() {
 		window.location = $(this).find('.js-pin-link').attr('href');
 	});
 
-	shame();
 });
 
 function resizeVideo () {
@@ -27,12 +26,3 @@ function resizeVideo () {
 
 var i = 0;
 
-function shame() {
-	setTimeout(function(){
-		i++;
-		$('.typekit-badge').hide();
-		if(i < 40) {
-			shame();
-		}
-	}, 100);
-}
